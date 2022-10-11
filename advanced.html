@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Images</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Advanced</title>
+  </head>
+  <body>
     <header class="header">
-        <nav>
-          <ul class="list">
-            <li><a href="./index.html">Search</a></li>
-            <li><a href="./images.html">Images</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-content">
-        <form id="search-form" action="https://www.google.com.br/search">
-          <label id="label-search" for="name">Google Advanced search:</label>
-          <input type="text" name="q" id="name" />
-          <input name="tbm" value="isch" hidden>
-          <input class="button" type="submit" value="Google Advanced Search">
-        </form>
-      </main>
-</body>
+      <nav>
+        <ul class="list">
+          <li><a href="./index.html">Search</a></li>
+          <li><a href="./images.html">Images</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content-advanced">
+      <h1>Advanced search</h1>
+      <hr />
+
+      <form id="search-advanced-form" action="https://www.google.com.br/search">
+        <div class="grid">
+          <label for="all-words"> all these words: </label>
+          <input type="text" name="q" id="all-words" class="input-advanced"/>
+          <label for="exact-expression"> this exact word or phrase: </label>
+          <input type="text" name="" id="exact-expression" class="input-advanced"/>
+          <label for=""> any of these words: </label>
+          <input type="text" name="" id="" class="input-advanced"/>
+          <label for=""> none of these words: </label>
+          <input type="text" name="" id="" class="input-advanced"   />
+          <div></div>
+          <input class="button advanced-btn" type="submit" value="Advanced Search" />
+        </div>
+        
+      </form>
+    </main>
+  </body>
 </html>
